@@ -132,3 +132,23 @@ footer i{
     from {flex-grow:0; opacity: 0}
     to {flex-grow:1; opacity: 1}
 }
+
+#scrollme{
+    cursor: pointer;
+    transform: translateY(-10px);
+    animation: aniscroll 2s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#scrollme:hover{
+    transform: scale(1.5, 1.5);
+    transition: all .5s;
+    color: #9AF3F3
+}
+
+/* Animates */
+@keyframes aniscroll{ 
+    from { transform: translateY(-10px); }
+    to {transform: translateY(10px);}
+}

@@ -2,7 +2,6 @@ var _optdesc = document.getElementsByClassName('optdesc');
 
 for (var c = 0; c < _optdesc.length; c++) {
     var bloco = _optdesc[c];
-    console.log(bloco.children);
     var d = document.createElement('div');
     d.className = 'mostrardescricao';
     d.dataset.secao = bloco.dataset.secao;
