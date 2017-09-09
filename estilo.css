@@ -29,8 +29,30 @@ main{
     align-items: center;
     flex-direction: row;    
     justify-content: flex-end;
-    background: url(bg.jpg) no-repeat #00ffff;
-    animation: apresentacao 2s ease-out; 
+    background: url(bg.jpg) no-repeat;
+    animation: apresentacao 2s ease-out;
+}
+
+@media screen and (max-width: 540px) {
+    .inicio {
+        background: url(bgm.jpg) no-repeat;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .inicio {
+        /* flex-direction: column;
+        justify-content: flex-end; */
+        display: block;
+        position: relative;
+    }
+
+    .inicio section{
+        position: absolute;
+        bottom: 0px;
+        right: 0px
+    }
 }
 
 .inicio section{
