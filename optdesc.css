@@ -1,0 +1,54 @@
+.optdesc p{
+    height: 14px;
+    overflow: hidden;
+    opacity: 0.3;
+    border-bottom: 1px solid #cccccc;
+    transition: all 1s;
+}
+
+.optdesc .selecionado{
+    height: auto;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.optdesc .mostrardescricao div{
+    width: 90px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.optdesc .mostrardescricao div span{
+    display: block
+}
+
+.optdesc .mostrardescricao div span.mais:after{
+    content: 'mostrar mais';
+    font-size: 12px;
+}
+
+.optdesc .mostrardescricao div span.menos:after{
+    content: 'mostrar menos';
+    font-size: 12px;
+}
+
+.optdesc .mostrardescricao div .imais{
+    transform: translateY(-10px);
+    transition: transform .2s;
+}
+
+.optdesc .mostrardescricao div:hover .imais {
+    transform: translateY(0px);
+    transition: transform .2s;
+}
+
+.optdesc .mostrardescricao div .imenos{
+    transform: rotate(180deg);
+    transition: transform .2s;
+}
+
+.optdesc .mostrardescricao div:hover .imenos {
+    transform: translateY(-10px) rotate(180deg);
+    transition: transform .2s;
+}

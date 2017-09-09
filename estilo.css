@@ -26,7 +26,8 @@ main{
     height:100%;
     width:100%;
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    flex-direction: row;    
     justify-content: flex-end;
     background: url(bg.jpg) no-repeat #00ffff;
     animation: apresentacao 2s ease-out; 
@@ -34,11 +35,29 @@ main{
 
 .inicio section{
     color: #FFFFFF;
-    /* width: 400px;
-    height: 80px; */
     padding: 20px;
     background: rgba(100, 100, 100, 0.5);
-    float: right;
+}
+
+.inicio section div{
+    margin-top: 20px;
+}
+
+.inicio section div i{
+    margin-right: 20px;
+    transform: scale(1, 1);
+    transition: all .5s
+}
+
+.inicio section div i:hover{
+    transform: scale(1.5, 1.5);
+    transition: all .5s;
+    color: #9AF3F3
+}
+
+.inicio section div a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .inicio section h1{
@@ -56,17 +75,7 @@ main{
 }
 
 .habilidades p{
-    height: 14px;
-    overflow: hidden;
-    color: #eeeeee;
-    border-bottom: 1px solid #cccccc;
-    transition: all 1s;
-}
-
-.habilidades .selecionado{
-    height: auto;
     color: #333333;
-    transition: all 1s;
 }
 
 .habilidades section div{
@@ -108,54 +117,18 @@ h1{
 }
 
 footer{
-    background:#CCFF00;
+    background:#002342;
+    color: #FFFFFF;
     flex: 0 0 60px;
+    text-align: center
+}
+
+footer i{
+    color: #FF3333
 }
 
 /* Animates */
  @keyframes apresentacao{
     from {flex-grow:0; opacity: 0}
     to {flex-grow:1; opacity: 1}
-}
-
-
-.mostrardescricao div{
-    width: 90px;
-    text-align: center;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-.mostrardescricao div span{
-    display: block
-}
-
-.mostrardescricao div span.mais:after{
-    content: 'mostrar mais';
-    font-size: 12px;
-}
-
-.mostrardescricao div span.menos:after{
-    content: 'mostrar menos';
-    font-size: 12px;
-}
-
-.mostrardescricao div .imais{
-    transform: translateY(-10px);
-    transition: transform .2s;
-}
-
-.mostrardescricao div:hover .imais {
-    transform: translateY(0px);
-    transition: transform .2s;
-}
-
-.mostrardescricao div .imenos{
-    transform: rotate(180deg);
-    transition: transform .2s;
-}
-
-.mostrardescricao div:hover .imenos {
-    transform: translateY(-10px) rotate(180deg);
-    transition: transform .2s;
 }
