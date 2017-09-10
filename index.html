@@ -45,8 +45,10 @@
         </div>
 
         <article class='habilidades'>
-            <h2>Sobre</h2>
-
+            <h2>Conhecimentos</h2>
+                <p>
+                    Os niveis descritos aqui foram definidos por um critério que se baseia em tempo e o tão confortável é a utilização destas tecnologias em projetos. O <b>avançado</b> para mim, é o item que eu já trabalho a muito tempo e me sinto confiança em utiliza-lo. Quanto ao <b>básico</b>, eu já usei em poucos projetos e pode levar mais tempo de execução do serviço, mas ainda eu tenho grande interesse de aprofundar o conhecimento, por isso ele está nesta lista.
+                </p>
             <h3>HTML</h3>
             <section>
                 <div>
@@ -65,7 +67,8 @@
 
             <div class="optdesc" data-secao='desc_html'>
                 <p>
-                    Comecei a estudar HTML aos 15 anos, como hobbie, a principio fiz um site da turma da escola depois de ler um livro chamado "Faça um site - Front Page 2000". Mesmo usando o Front Page, o autor focava bastante no código HTML. Desde então eu acompanhei a evolução do HTML/CSS e as tendências, como tableless, novos formatos (svg, webm etc), frameworks e atualmente a enfase no mobile.
+                    Comecei a estudar HTML aos 15 anos, como hobbie, a principio fiz um site da turma da escola depois de ler um livro chamado "Faça um site - Front Page 2000". Mesmo usando o Front Page, o autor focava bastante no código HTML. Desde então eu acompanhei a evolução do HTML/CSS e as tendências, como tableless, novos formatos (svg, webm etc), frameworks e atualmente a enfase no mobile.<br><br>
+                    O Bootstrap foi um processo natural, com seu enorme sucesso e facilidade de adaptação de layouts torno-se quase um padrão nos meus projetos profissionais.
                 </p>
             </div>
 
@@ -90,7 +93,8 @@
             </section>
             <div class="optdesc" data-secao='desc_backend'>
                 <p id='desc_backend'>
-                    Minha experiências com back end começou no curso técnico, fiz projetos acadêmicos usando o ASP clássico. Logo após a conclusão do curso, decidi aprender o PHP, sua sintaxe mais simples e a grande comunidade em volta tornou mais fácil a transição, comecei a trabalhar profissionalmente com PHP na BrList, inicialmente meus projetos eram feitos com PHP puro. Após alguns anos, passei a utilizar em grande parte dos projetos o Laravel como framework MVC. Desenvolvi uma API em Python, sobre um framework Django Restful. o serviço ficou funcional, mas não entrou no ar devido ao um problema de confuguração do servidor.
+                    Minha experiências com back end começou no curso técnico, fiz projetos acadêmicos usando o ASP clássico. Logo após a conclusão do curso, decidi aprender o PHP, sua sintaxe mais simples e a grande comunidade em volta tornou mais fácil a transição, comecei a trabalhar profissionalmente com PHP na BrList, inicialmente meus projetos eram feitos com PHP puro. Após alguns anos, passei a utilizar em grande parte dos projetos o Laravel como framework MVC.<br><br>
+                    Desenvolvi uma API em Python, sobre um framework Django Restful. o serviço ficou funcional, mas não entrou no ar devido ao um problema de confuguração do servidor.
                 </p>
             </div>
 
@@ -112,7 +116,9 @@
             </section>
             <div class="optdesc" data-secao='desc_javascript'>
                 <p id='desc_javascript'>
-                    O uso do javascript inicialmente era para itens básicos, como pequenas animações manipulando o DOM, com o sucesso do jQuery, passei a utiliza-lo com mais frequência e seguindo a tendência da comunidade, passei a criar páginas usando o Ajax. Com a versão do EcmaScript 6, webpack e transpiler, o uso do Javascript ficou mais interessante, hoje em dia, utilizo sempre que possível em projetos <i>Single Page Applications</i>. Também me interessei pelo Node JS, fiz cursos e alguns testes interno, no entanto, não cheguei a usar em projetos reais, mas gosto muito do seu gerenciador de pacotes NPM e utilizo em conjunto em projetos PHP.
+                    O uso do javascript inicialmente era para itens básicos, como pequenas animações manipulando o DOM.<br><br>
+                    Com o sucesso do jQuery, passei a utiliza-lo com mais frequência e seguindo a tendência da comunidade, passei a criar páginas usando o Ajax.<br><br>
+                    A versão do EcmaScript 6, webpack e transpiler, tornou o uso do Javascript mais interessante, hoje em dia, utilizo sempre que possível em projetos <i>Single Page Applications</i>. Também me interessei pelo Node JS, fiz cursos e alguns testes interno, no entanto, não cheguei a usar em projetos reais, mas gosto muito do seu gerenciador de pacotes NPM e utilizo em conjunto em projetos PHP.
                 </p>
             </div>
 
@@ -244,10 +250,15 @@
             <section>
                 <h4>NoBeta S.A.</h4>
                 <span>Midia eletrônica.<br>
-                <i>de Setembro de 2014 até o momento.</i></span>
+                <i>3 anos: de Setembro de 2014 até o momento.</i></span>
                 <div class="optdesc" data-secao='desc_nobeta'>
                     <p>
-                        Criação do principal produto da empresa: encurtador de links. Usando o PHP puro e MySQL, para garantir a performance. Também todo a parte administrativa de links e relatórios da plataforma usando Laravel. Posteriormente um script que insere uma publicidade em páginas de terceiro, usando o Google DFP integrado com a Navegg. Na Hello, uma plataforma de pesquisa, feita com PHP e MySQL e sua administração feita com Laravel. Um projeto de Aplicativo Android e outro de Progressive WebApp, com HTML e Javascript. Configurações básicas da Amazon Web Service.
+                        <b>principais atividades:</b> Escrever um sistema de encurtador de link, que gera um código alfanumerico sequencial atraves de trigger do MySQL e guardando as informações de meta tags em banco de dados e um sistema de cache em arquivos.<br><br>
+                        Os links encurtados levam a uma página intermediária que exibe uma propaganda com um tempo obrigatório de 3 segundos, esta página usa javascript para colocar a publicidade provida do Google DFP, segmentada pela DMP Navegg, em tela cheia. Anteriormente os serviços utilizados eram a SmartAds e TailTarget.<br><br>
+                        Outra necessidade foi inserir a publicidade fullscreen na página dos parceiros como um script. Isso foi feita também com javascript e segue o mesmo padrão visual da propaganda intermediária do encurtador. Em ambos os casos (encurtador e tag script) o uso do jquery foi evitada, pois a diferença de milisegundos da requisição era importante para a entrega de uma publicidade.<br><br>
+                        Em paralelo, criei um painel para os parceiros encurtarem os links e verificar os dados de seus links encurtados, para isso foi utilizado a library do Google DFP para preencher os relatórios. Entre os parceiros estão o MTV, o Jornal Lance, sites como Cifras, Area H, Ocioso, entre outros.<br><br>
+                        Na Hello Group, da qual a Nobeta faz parte, tive a oportunidade de criar uma plataforma de pesquisa on line, que consiste em um questionario com inumeros tipo de perguntas, para pesquisa de mercado, além da plataforma de administração que permite um usuário leigo a digitar as perguntas, gerar o link e gerar relatórios com o resultado da pesquisa. Com esta plataforma, foram atendidos clientes como Grupo Pão de Açucar, Colormaq, Outback, Honda, Bradesco, Banco do Brasil, Hering, Brasil Kirin, Brookfield, Votorantim, Magazine Luiza, Mitsubishi, Sony, Boticario, entre outros.<br><br>
+                        No Projeto de Walmart, criei um aplicativo de auditoria de preço. consistia em um app que baixa uma lista pre-estabelecida de produtos para cada loja, do qual o auditor possa responder algumas questões sobre o produto, tirar fotos e enviar os dados por uma API, escrita por mim. Os dados era apresentado no painel de administração da Hello Research. O aplicativo só havia uma versão para Android, escrita nativamente no Android Studio e distribuida via arquivo apk.
                     </p>
                 </div>
 
@@ -258,7 +269,12 @@
                 <i>de Abril de 2008 até o Agosto de 2014.</i></span>
                 <div class="optdesc" data-secao='desc_brlist'>
                     <p>
-                        Criação do site industriabrasileira.com, brlist.com.br, multiguias.com.br, classificadosempresas.com.br (atualmente offline). Sistema interno de controle de horário dos funcionarios em Java e C#, sistema de gerenciamento do relatório de telemarketing em C#. Gerenciamento e importação de banco de dados para a plataforma de pesquisas dos sites do guia para MySQL. Sistema de gerenciamento de pedidos e pagamento da farmaceutica em PHP.
+                        <b>principais atividades</b> 
+                        Fui contratado para a criação do site industriabrasileira.com, fiz todo o processo, desde a criação dos wireframes e layout, passando pelo desenvolvimento e finalmente o hospedagem e deploy. Industriabrasileira.com era um site de busca de industria, com noticias sobre o setor, o banco de dados foi tratado e colocado para pesquisa, outras bases foram adicionadas, cuja conversão e tratamento foram feita antes de entrar em produção. O industriabrasileira.com foi criado em PHP usando a base em MySQL<br><br>                        
+                        Com o site em produção, fui recolocado para a atualização do site da empresa: multiguias.com.br, cujo a montagem em HTML e programação com o Laravel feita por mim.<br><br>
+                        Também fui responsável em criar o sistema de gerenciamento do controle de horário dos funcionários da empresa, a ideia era o funcionário, na entrada ou saida da empresa, digitar seu código e tirar uma foto na webcam para comprovar sua identidade. O sistema foi escrito em Java, porém, o problema causado pela falta de suporte da library de webcam (JMF), fez com que eu decidisse por outra linguagem: C#, do qual o problema com a webcam fosse resolvida rapidamente, então reescrevi todo o sistema para esta linguagem.<br><br>
+                        Outro sistema interno criado em C# foi um gerenciador de dados para o Telemarketing: um sistema de impressão de dados para o pessoal de telemarketing fazer as ligações, além de importação de dados via csv ou xls e cruzamento de dados com os telefones bloqeuados pelo PROCON.<br><br>
+                        Por ultimo, criei um sistema interno para gerenciar os pedidos de compra da Famaucêtica Balm Labor, do qual fazia parte das empresas do dono da empresa, criado em PHP com MySQL.<br><br>
                     </p>
                 </div>
             </section>
@@ -268,7 +284,9 @@
                 <i>de Abril de 2007 até o Março de 2008.</i></span>
                 <div class="optdesc" data-secao='desc_esm'>
                 <p>
-                    Criação e montagem HTML dos sites corinthians.com.br e torcidalg.com.br. Criação de banners estástico e animados usando Photoshop e Flash. Montagem criativa gerenciamento de envio de mailmarketing de e-commerce.
+                    <b>principais atividades</b>
+                    Na ESM trabalhei principalmente como designer, tive a grande oportunidade de criar o layout e montagem em HTML/CSS do site oficial do Sport Clube Corinthians Paulista. Além de trabalhar no site torcidalg.com.br, uma rede social, estilo Orkut, para torcedores do São Paulo e o site do jogador Alex (ex-palmeiras e Fenerbahce).<br><br>
+                    Também fui responsável na criação de banners estáticos e animados usando Photoshop e Flash e a criação de mail marketing da Polimaia, um e-commerce de perfumes importado, do qual a ESM gerenciava.<br><br>
                 </p>
                 </div>
             </section>
