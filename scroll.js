@@ -1,11 +1,11 @@
 function scrollTo(element, to, duration) {
     if (duration <= 0) return;
-    var difference = to - element.scrollTop;
+    var difference = to - window.pageYOffset;
     var perTick = difference / duration * 10;
 
     setTimeout(function() {
-        element.scrollTop = element.scrollTop + perTick;
-        if (element.scrollTop === to) return;
+        window.scroll(0, window.pageYOffset + perTick);
+        if (window.pageYOffset === to) return;
         scrollTo(element, to, duration - 10);
     }, 10);
 }

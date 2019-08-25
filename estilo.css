@@ -5,7 +5,6 @@ body{
     height:100%;
     margin:0px;
     font-family: 'Quicksand', sans-serif;
-
 }
 header{
     background: rgba(100, 100, 100, 1);
@@ -83,7 +82,10 @@ main{
 }
 
 .inicio section h1{
-    font-size: 60px
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Arial Black';
+    text-transform: uppercase
 }
 
 .habilidades{
